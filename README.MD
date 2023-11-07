@@ -20,6 +20,6 @@ This project is a simple TextEnhancer web application which enhances the text en
   Objective:
   </h3>
   <ol>
-    <li>To learn bootstrap and to integrate it with React and vite</li>
+    <li>To learn bootstrap and How to integrate it with React and vite.</li>
    
   </ol>
