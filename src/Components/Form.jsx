@@ -54,11 +54,13 @@ const Form = (props) => {
         props.callalert("success", "Text cleared");
 
     }
+    const mobileMediaQuery = window.matchMedia('(min-width: 768px)');
+
 
     return (
 
         <div className="conta">
-            <div className="container con" style={props.alert ? { paddingTop: "10px" } : { paddingTop: "135px" }}>
+            <div className="container con" style={props.alert ? { paddingTop: mobileMediaQuery.matches ? '10px' : '135px', } : { paddingTop: "135px" }}>
                 <div className="row">
                     <div className="col m-auto">
                         <h1>Enter your text below to Analyze :</h1>

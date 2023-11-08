@@ -3,7 +3,7 @@ import React from 'react'
 const summary = (props) => {
 
   return (
-    <div className="container accordion mt-3" style={{height:"46vh", marginBottom: "11v"}} id="accordionPanel">
+    <div className="container accordion mt-3" style={{ height: "46vh", marginBottom: "11v" }} id="accordionPanel">
       <div className="accordion-item border border-2">
         <h2 className="accordion-header text-light">
           <button className={`accordion-button bg-${props.mode ? "dark" : "light"} text-${props.mode ? "light" : "dark"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">

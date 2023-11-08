@@ -8,12 +8,14 @@ import About from './Components/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+
   const [motext, setMotext] = useState("Enable dark mode");
   const [alert, setAlert] = useState(null);
 
   const callalert = (type, message) => {
     const b = document.body.getElementsByClassName("conta")[0];
-    b.style.paddingTop = "0px";
+    // b.style.paddingTop = "0px";
     setAlert({
       type: type,
       mssg: message
@@ -21,9 +23,10 @@ function App() {
     setTimeout(() => {
       setAlert(null);
       const b = document.body.getElementsByClassName("conta")[0];
-      b.style.paddingTop = "100px";
+      // b.style.paddingTop = "100px";
     }, 1500);
   }
+
 
   const [mode, setmode] = useState(false);
   const togglefun = () => {
@@ -47,8 +50,8 @@ function App() {
     //   <Form mode={mode} togglefun={togglefun} callalert={callalert} alert={alert}/>
     // </div>
     <BrowserRouter>
-      <Navbar mode={mode} togglefun={togglefun} motext={motext} alert={alert} />
-      <Alert alert={alert} />
+      <Navbar mode={mode} togglefun={togglefun} motext={motext} alert={alert} toggle={toggle} setToggle={setToggle} />
+      <Alert alert={alert} toggle={toggle} />
       <Routes>
         <Route exact path="/" element={<Form mode={mode} togglefun={togglefun} callalert={callalert} alert={alert} />} />
         <Route exact path="/about" element={<About alert={alert} />} />
