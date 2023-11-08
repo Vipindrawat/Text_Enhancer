@@ -29,7 +29,6 @@ const Form = (props) => {
         }).join(' ');
         setText(extra);
         props.callalert("success", "Extra space removed");
-
     }
 
     const firstletter = () => {
@@ -89,4 +88,4 @@ const Form = (props) => {
     )
 }
 
-export default Form
+export default Form;
