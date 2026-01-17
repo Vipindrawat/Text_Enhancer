@@ -1,8 +1,0 @@
-adding alert component
-router 
-about component
-cls remove
-setting title,description,favicon--
-button  disable in  case of no text inside text state variable
-checking responsiveness of web site for mobile devices
-SEO -adding sutable keywords in title and description so that it can be matched with users search keywords

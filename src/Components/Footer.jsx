@@ -5,7 +5,7 @@ function Footer(props) {
     <footer>
       <div className={`fixed-bottom footer bg-${props.mode?"dark":"primary"}`}>
           <div className={`text-center text-${props.mode?"light":"dark"} p-3`} >
-            © 2023 Copyright : : TextEnhancer
+            © 2026 Copyright : : TextEnhancer
           </div>
       </div>
     </footer>
