@@ -49,7 +49,7 @@ function App() {
     // <div>
     //   <Form mode={mode} togglefun={togglefun} callalert={callalert} alert={alert}/>
     // </div>
-    <BrowserRouter>
+    <BrowserRouter basename="/Text_Enhancer">
       <Navbar mode={mode} togglefun={togglefun} motext={motext} alert={alert} toggle={toggle} setToggle={setToggle} />
       <Alert alert={alert} toggle={toggle} />
       <Routes>
